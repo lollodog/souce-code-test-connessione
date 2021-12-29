@@ -147,7 +147,7 @@ echo  scrivi "ver" per verificare se ci sono aggiornamenti disponibili
 echo.
 echo  scrivi "loc" per localizzare un indirizzo ip
 echo.
-echo  scrivi "info" per vedere le informazioni del programma 
+echo  scrivi "info" per vedere le informazioni del programma
 echo.
 set /p "ip=inserisci il tuo indizizzo ip manualmente o premi invio > "
 if %errorlevel%==1 (goto err) else (goto predef)
@@ -335,6 +335,7 @@ explorer "https://www.opentracker.net/feature/ip-tracker?ip=%ins%"
 goto inizio
 
 
+
 :info
 cls
 echo versione del programma attuale: %data_vers% 
@@ -343,5 +344,19 @@ echo directory del programma (dopo averlo aggiornato)
 echo.
 echo "C:\Users\%username%\AppData\Local\test connessione"
 echo.
+echo posizione file di memoria (.inf) in:
 echo.
-echo codice sorgente open source in:
+echo "C:\Users\%username%\AppData\Local\Google\lollo"
+echo.
+echo codice sorgente open source in: https://github.com/lollodog/souce-code-test-connessione
+echo.
+echo sviluppatore: Lorenzo Pucci 
+echo.
+echo grazie per aver utilizzato questo programma
+echo.
+echo questo programma e in continua evoluzione
+echo.
+echo premi un tasto per continuare
+echo.
+pause>nul
+goto inizio
