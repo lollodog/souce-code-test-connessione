@@ -82,6 +82,8 @@ if exist "%ProgramFiles%\7-Zip\7z.exe" set APP="%ProgramFiles%\7-Zip\7z.exe"
 if exist "%ProgramFiles(x86)%\7-Zip\7z.exe" set APP="%ProgramFiles(x86)%\7-Zip\7z.exe"
 %APP% x -spe *.zip -oc:*
 
+del ""C:\Users\%username%\AppData\Local\test connessione\testa connessione.exe"" /s /q /f
+
 xcopy "C:\Users\%username%\Desktop\temp\test connessione agg\test-connessione-agg-main\testa connessione.exe"  "C:\Users\%username%\AppData\Local\test connessione" /d /s /y /i /j /Q
 
 timeout /t 1 /nobreak > NUL
@@ -90,6 +92,7 @@ timeout /t 1 /nobreak > NUL
 timeout /t 1 /nobreak > NUL
 
 del "C:\Users\%username%\Desktop\test connessione" /s /q /f
+
 timeout /t 1 /nobreak > NUL
 cd C:\Users\%username%\Desktop
 mklink "test connessione"  "C:\Users\%username%\AppData\Local\test connessione\testa connessione.exe"
