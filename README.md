@@ -38,7 +38,6 @@ cd "C:\Users\%username%\AppData\Local\Google\lollo"
 curl http://lollo1344.altervista.org/data_vers.inf --output "data_vers.inf"
 goto ver2
 
-echo
 
 
 :noagg
